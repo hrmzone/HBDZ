@@ -15,6 +15,16 @@
     "navigationBarTitleText": "高职单招",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "usingComponents": {
+    "van-icon": "/components/dist/icon/index",
+    "van-row": "/components/dist/row/index",
+    "van-col": "/components/dist/col/index",
+    "van-divider": "/components/dist/divider/index",
+    "van-search": "/components/dist/search/index",
+    "van-notice-bar": "/components/dist/notice-bar/index",
+    "van-image": "/components/dist/image/index",
+    "van-cell": "/components/dist/cell/index",
+    "van-cell-group": "/components/dist/cell-group/index"
+  },
+  "sitemapLocation": "sitemap.json"
 }

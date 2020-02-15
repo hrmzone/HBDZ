@@ -1,2 +1,43 @@
 <!--miniprogram/pages/index/index.wxml-->
-<text>miniprogram/pages/index/index.wxml</text>
+<view>
+  <view>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:change="onChange" bind:search="onSearch" bind:cancel="onCancel" />
+  </view>  
+
+  <block wx:if="{{num > 0}}">
+  <view>
+    <van-divider contentPosition="center">河北高职院校清单({{num}}所)</van-divider>
+  </view>
+  <view>
+    <van-cell center title="学校招生代码" value="学校名称" />
+  </view>
+    <scroll-view scroll-y="true" style="height: 960rpx;">
+      <view wx:for="{{collegelist}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
+        <van-cell
+          is-link
+          center
+          title="{{item.ccode}}"
+          value="{{item.cname}}"
+          link-type="navigateTo"
+          url="/pages/college/college"
+        />
+      </view>
+    </scroll-view>
+  </block>
+  <block wx:else>
+  <view>
+    <van-image
+      round
+      width="10rem"
+      height="10rem"
+      src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </view>
+  </block>
+
+  <view>
+  <van-notice-bar
+    mode="closeable"
+    speed="20"
+    left-icon="/images/noticebar.png" text="{{msg}}" />
+  </view>
+</view>
