@@ -19,7 +19,7 @@
           title="{{item.ccode}}"
           value="{{item.cname}}"
           link-type="navigateTo"
-          url="/pages/college/college"
+          url="/pages/college/college?ccode={{item.ccode}}"
         />
       </view>
     </scroll-view>

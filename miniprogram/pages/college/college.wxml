@@ -1,2 +1,39 @@
 <!--miniprogram/pages/college/college.wxml-->
-<text>miniprogram/pages/college/college.wxml</text>
+<view>
+<view>
+  <van-row>
+    <van-col span="24"><van-button round disabled size="large" type="info">{{collegeinfo.cname}}</van-button></van-col>
+  </van-row>
+  <van-row>
+    <van-col span="11" offset="1"><van-button plain hairline disabled size="small" type="warning">招生代码：{{collegeinfo.ccode}}</van-button></van-col>
+    <van-col span="12"><van-button plain hairline size="small" type="warning">联系方式：{{collegeinfo.tel}}</van-button></van-col>
+  </van-row>
+</view>
+
+<view>
+  <van-divider contentPosition="center">本校专业清单(共{{num}}个)</van-divider>
+</view>
+<view>
+    <van-cell center title="专业名称" value="专业大类" />
+  </view>
+<scroll-view scroll-y="true" style="height: 960rpx;">
+  <view wx:for="{{subjectitems}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
+    <van-cell
+      is-link
+      center
+      title="{{item.sname}}"
+      value="{{item.cate}}"
+      link-type="navigateTo"
+      url="/pages/item/item?stitle={{item.sname}}"
+    />
+  </view>
+</scroll-view>
+
+<view>
+<van-notice-bar
+  mode="closeable"
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
+</view>
+
+</view>

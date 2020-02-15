@@ -54,6 +54,9 @@ Page({
 
   onSearch() {
     console.log("onSearch():",this.data.value);
+    wx.showLoading({
+      title: '加载中...',
+    })
     wx.cloud.callFunction({
       name:'getcollege',
       data:{
@@ -65,7 +68,8 @@ Page({
         this.setData({
           collegelist: res.result.dbResult.data,
           num: res.result.dbResult.data.length
-        })
+        });
+        wx.hideLoading();
       }
     )
   },
@@ -75,6 +79,17 @@ Page({
       value:''
     });
     console.log("onCancel():",this.data.value);
+    wx.cloud.callFunction({
+      name: 'getcollegelist'
+    }).then(
+      res => {
+        console.log("onLoad():1:", res.result.dbResult.data.length)
+        this.setData({
+          collegelist: res.result.dbResult.data,
+          num: res.result.dbResult.data.length
+        })
+      }
+    );
   },
 
   /**

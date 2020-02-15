@@ -5,14 +5,55 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    ccode:13400,
+    subjectitems:[],
+    num:0,
+    collegeinfo:null,
+    msg:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      ccode:options.ccode
+    })
+    wx.showLoading({
+      title: '加载中...',
+    })
+    console.log("onLoad():1:",this.data.ccode);
+    wx.cloud.callFunction({
+      name:'getsubjectitems',
+      data:{
+        ccode:parseInt(this.data.ccode)
+      }
+    }).then(
+      res=>{
+        console.log("onLoad():2:",res.result.subjectitems.data.length)
+        console.log("onLoad():3:", res.result.collegeinfo.data[0])
+        this.setData({
+          subjectitems:res.result.subjectitems.data,
+          num: res.result.subjectitems.data.length,
+          collegeinfo: res.result.collegeinfo.data[0]
+        })
+        wx.hideLoading()
+      }
+    )
 
+    //获取公告消息msg3
+    const db = wx.cloud.database();
+    db.collection("msg").where({
+      id: 3
+    }).get().then(
+      res => {
+        console.log("onLoad():4:", res.data[0].content)
+        this.setData({
+          msg: res.data[0].content
+        })
+      }
+    )
+    
   },
 
   /**
