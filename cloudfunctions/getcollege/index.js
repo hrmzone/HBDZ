@@ -12,6 +12,7 @@ exports.main = async (event, context) => {
       options: 'i'
     })
   }).orderBy('cname', 'desc').get()
+  
   return {
     dbResult
   }

@@ -1,2 +1,13 @@
 <!--miniprogram/pages/item/item.wxml-->
 <text>miniprogram/pages/item/item.wxml</text>
+<view>
+{{subjectinfo.stitle}}
+{{subjectinfo.sobject}}
+</view>
+<view wx:for="{{subjectitems}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
+  {{item.cate}}
+  {{item.ccode}}
+  {{item.cname}}
+  {{item.scode}}
+  {{item.sname}}
+</view>
