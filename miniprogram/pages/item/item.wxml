@@ -1,13 +1,66 @@
 <!--miniprogram/pages/item/item.wxml-->
-<text>miniprogram/pages/item/item.wxml</text>
 <view>
-{{subjectinfo.stitle}}
-{{subjectinfo.sobject}}
+<view align="center">
+<van-row>
+  <van-tag type="primary" size="large">{{subjectinfo.stitle}}</van-tag>  
+  </van-row>
 </view>
+
+<view>
+  <van-row>
+  <van-tag mark type="success" size="medium">专业大类：{{subjectinfo.scate}}</van-tag>  
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">联考学校：{{subjectinfo.exam}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.sobject}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.spro}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.scourse}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.sjob}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.sup}}</van-tag> 
+  </van-row>
+  <van-row>
+  <van-tag mark type="success" size="medium">{{subjectinfo.sdir}}</van-tag> 
+  </van-row>
+</view>
+
+<view>
+<van-divider contentPosition="center">相关招生学校清单(共{{num}}所)</van-divider>
+</view>
+
+<view>
+  <van-row>
+    <van-col span="4" custom-class="dark">学校代码</van-col>
+    <van-col span="8" custom-class="dark">学校名称</van-col>
+    <van-col span="7" custom-class="dark">专业</van-col>
+    <van-col span="5" custom-class="dark">大类</van-col>
+  </van-row>
+</view>
+<scroll-view scroll-y="true" style="height: 600rpx;">
 <view wx:for="{{subjectitems}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
-  {{item.cate}}
-  {{item.ccode}}
-  {{item.cname}}
-  {{item.scode}}
-  {{item.sname}}
+  <van-row custom-class="light">
+    <van-col span="4" >{{item.ccode}}</van-col>
+    <van-col span="8" >{{item.cname}}</van-col>
+    <van-col span="7" >{{item.sname}}</van-col>
+    <van-col span="5" >{{item.cate}}</van-col>
+  </van-row>
+</view>
+</scroll-view>
+
+<view>
+<van-notice-bar
+  mode="closeable"
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
+</view>
+
 </view>

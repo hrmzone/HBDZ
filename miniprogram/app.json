@@ -25,7 +25,8 @@
     "van-image": "/components/dist/image/index",
     "van-cell": "/components/dist/cell/index",
     "van-cell-group": "/components/dist/cell-group/index",
-    "van-button": "/components/dist/button/index"
+    "van-button": "/components/dist/button/index",
+    "van-tag": "/components/dist/tag/index"
   },
   "sitemapLocation": "sitemap.json"
 }

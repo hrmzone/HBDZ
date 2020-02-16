@@ -9,7 +9,8 @@ Page({
     sid:167,
     subjectinfo:[],
     subjectitems:[],
-    num:0
+    num:0,
+    msg:''
   },
 
   /**
@@ -24,6 +25,19 @@ Page({
     })
     console.log("onLoad():1:",this.data.sid);
 
+    //获取公告消息msg3
+    const db = wx.cloud.database();
+    db.collection("msg").where({
+      id: 5
+    }).get().then(
+      res => {
+        console.log("onLoad():4:", res.data[0].content)
+        this.setData({
+          msg: res.data[0].content
+        })
+      }
+    )
+
     wx.cloud.callFunction({
       name:'getsubjectitem',
       data:{
@@ -36,7 +50,7 @@ Page({
         this.setData({
           subjectinfo:res.result.subjectinfo.data[0],
           subjectitems:res.result.subjectitems.data,
-          num: res.result.subjectitems.data
+          num: res.result.subjectitems.data.length
         })
         console.log("onLoad:3:", this.data.subjectinfo)
       }
