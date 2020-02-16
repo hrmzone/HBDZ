@@ -103,7 +103,9 @@
 <block wx:if="{{num>0}}">
 <view>
 <van-divider contentPosition="center">“{{value}}”相关专业共{{num}}个</van-divider>
+<van-cell center title="专业名称" value="专业大类" />
 </view>
+<scroll-view scroll-y="true" style="height: 1000rpx;">
 <view wx:for="{{subjectlist}}" wx:key="key" wx:for-index="idx" wx:for-item="item">
 <van-cell
   is-link
@@ -113,6 +115,7 @@
   url="/pages/item/item?sid={{item.sid}}"
 />
 </view>
+</scroll-view>
 </block>
 
 <block wx:else>
@@ -123,5 +126,10 @@
 
 </view>
 
+<view>
+<van-notice-bar
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
+</view>
 
 </view>

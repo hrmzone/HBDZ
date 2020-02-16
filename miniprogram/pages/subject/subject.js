@@ -15,7 +15,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database();
+    db.collection("msg").where({
+      id:2
+    }).get().then(
+      res=>{
+        this.setData({
+          msg: res.data[0].content
+        })
+      }
+    )
   },
   onChange(e) {
     console.log("onChange():1:",e.detail)
@@ -80,6 +89,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    
 
   },
 
