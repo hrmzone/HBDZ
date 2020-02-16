@@ -1,2 +1,23 @@
 <!--miniprogram/pages/cate/cate.wxml-->
-<text>miniprogram/pages/cate/cate.wxml</text>
+<view>
+<view>
+<van-notice-bar
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
+</view>
+
+<view>
+<van-divider contentPosition="center">第{{scate}}共有{{num}}专业</van-divider>
+<van-cell title="专业名称" value="点击查看" />
+</view>
+<view wx:for="{{catelist}}" wx:for-item="item" wx:key="key" wx:for-index="idx">
+<van-cell
+  is-link
+  title="{{item.sname}}"
+  value="查看"
+  link-type="navigateTo"
+  url="/pages/item/item?sid={{item.sid}}"
+/>
+</view>
+
+</view>

@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -51,7 +51,7 @@
 					"id": 2,
 					"name": "pages/item/item",
 					"pathName": "pages/item/item",
-					"query": "sid=167",
+					"query": "sid=112",
 					"scene": null
 				},
 				{
@@ -59,6 +59,13 @@
 					"name": "pages/subject/subject",
 					"pathName": "pages/subject/subject",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/cate/cate",
+					"pathName": "pages/cate/cate",
+					"query": "scate=二类",
 					"scene": null
 				}
 			]
