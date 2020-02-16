@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "单招大类专业",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

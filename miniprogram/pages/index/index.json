@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "搜索院校",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

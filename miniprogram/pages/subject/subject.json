@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "查询专业",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

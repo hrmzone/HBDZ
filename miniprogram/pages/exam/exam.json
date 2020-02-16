@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "考试安排",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

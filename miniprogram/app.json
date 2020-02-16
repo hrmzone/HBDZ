@@ -31,5 +31,25 @@
     "van-grid": "/components/dist/grid/index",
     "van-grid-item": "/components/dist/grid-item/index"
   },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#ff4c91",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "院校"
+      },
+      {
+        "pagePath": "pages/subject/subject",
+        "text": "专业"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "About"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }

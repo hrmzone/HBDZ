@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "专业意向调查",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }
