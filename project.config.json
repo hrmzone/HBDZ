@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -52,6 +52,13 @@
 					"name": "pages/item/item",
 					"pathName": "pages/item/item",
 					"query": "sid=167",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/subject/subject",
+					"pathName": "pages/subject/subject",
+					"query": "",
 					"scene": null
 				}
 			]

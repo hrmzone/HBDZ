@@ -60,7 +60,7 @@ Page({
     wx.cloud.callFunction({
       name:'getcollege',
       data:{
-        value:this.data.value
+        value:this.data.value==''?'石家庄理工':this.data.value
       }
     }).then(
       res=>{

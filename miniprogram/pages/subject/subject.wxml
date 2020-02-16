@@ -1,2 +1,127 @@
 <!--miniprogram/pages/subject/subject.wxml-->
-<text>miniprogram/pages/subject/subject.wxml</text>
+<view>
+<view>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:change="onChange" bind:search="onSearch" bind:cancel="onCancel" />
+</view>
+
+<view wx:if="{{flag>0}}">
+<view>
+<van-divider contentPosition="center">2020河北单招专业大类</van-divider>
+</view>
+
+<view>
+<van-grid clickable column-num="3">
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=一类"
+    text="第一大类"
+    info="建筑"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-2.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=二类"
+    text="第二大类"
+    info="交运"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-3.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=三类"
+    text="第三大类"
+    info="机械"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=四类"
+    text="第四大类"
+    info="农林"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=五类"
+    text="第五大类"
+    info="管理"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=六类"
+    text="第六大类"
+    info="教育"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=七类"
+    text="第七大类"
+    info="医学"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=八类"
+    text="第八大类"
+    info="艺术"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=九类"
+    text="第九大类"
+    info="财经"
+  />
+  <van-grid-item
+    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    link-type="navigateTo"
+    url="/pages/cate/cate?scate=十类"
+    text="第十大类"
+    info="计算机"
+  />
+  <van-grid-item
+    icon="todo-list-o"
+    link-type="navigateTo"
+    url="/pages/exam/exam"
+    text="考试安排"
+    info="2020"
+  />
+  <van-grid-item
+    icon="edit"
+    link-type="navigateTo"
+    url="/pages/survay/survay"
+    text="小调查"
+  />
+</van-grid>
+</view>
+</view>
+
+<view wx:else>
+
+<block wx:if="{{num>0}}">
+<view>
+<van-divider contentPosition="center">“{{value}}”相关专业共{{num}}个</van-divider>
+</view>
+<view wx:for="{{subjectlist}}" wx:key="key" wx:for-index="idx" wx:for-item="item">
+<van-cell
+  is-link
+  title="{{item.sname}}"
+  value="{{item.scate}}"
+  link-type="navigateTo"
+  url="/pages/item/item?sid={{item.sid}}"
+/>
+</view>
+</block>
+
+<block wx:else>
+<view>
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/loading.jpeg" />
+</view>
+</block>
+
+</view>
+
+
+</view>

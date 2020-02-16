@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    value:'',
+    flag:1, //1:显示大类，0：显示查询专业view
+    subjectlist:[],
+    num:0
   },
 
   /**
@@ -14,7 +17,44 @@ Page({
   onLoad: function (options) {
 
   },
+  onChange(e) {
+    console.log("onChange():1:",e.detail)
+    this.setData({
+      value:e.detail
+    })
+  },
 
+  onSearch() {
+    console.log("onSearch():1:",this.data.value)
+    wx.showLoading({
+      title: '搜索中...',
+    })
+    this.setData({
+      flag:0
+    })
+    wx.cloud.callFunction({
+      name:'getsubjectlist',
+      data:{
+        value:this.data.value==''?'建筑设计':this.data.value
+      }
+    }).then(
+      res=>{
+        wx.hideLoading();
+        console.log("onSearch():2:",res.result.list.data);
+        this.setData({
+          num: res.result.list.data.length,
+          subjectlist:res.result.list.data
+        })
+      }
+    )
+
+  },
+
+  onCancel() {
+    this.setData({
+      flag:1
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
