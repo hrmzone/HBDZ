@@ -24,7 +24,7 @@
       title="{{item.sname}}"
       value="{{item.cate}}"
       link-type="navigateTo"
-      url="/pages/item/item?sname={{item.sname}}"
+      url="/pages/item/item?sid={{item.sid}}"
     />
   </view>
 </scroll-view>

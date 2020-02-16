@@ -6,6 +6,7 @@ Page({
    */
   data: {
     sname:'建筑设计',
+    sid:167,
     subjectinfo:[],
     subjectitems:[],
     num:0
@@ -19,14 +20,14 @@ Page({
       title: '加载中...',
     })
     this.setData({
-      sname:this.getStr(options.sname)
+      sid:options.sid
     })
-    console.log("onLoad():1:",this.data.sname);
+    console.log("onLoad():1:",this.data.sid);
 
     wx.cloud.callFunction({
       name:'getsubjectitem',
       data:{
-        sname:this.data.sname
+        sid:parseInt(this.data.sid)
       }
     }).then(
       res=>{
@@ -37,12 +38,13 @@ Page({
           subjectitems:res.result.subjectitems.data,
           num: res.result.subjectitems.data
         })
-        console.log("onLoad:2:", this.data.subjectinfo)
+        console.log("onLoad:3:", this.data.subjectinfo)
       }
     )
   },
 
 //有些专业名称为：建筑工程技术(装配化施工)，需要去掉(符号之后的内容，只需要专业，无需方向。
+//通过sid获取subjectinfo，subjectitem表中的数据，因为通过sname进行的模糊查询，会发现找到不同的专业。
   getStr(value) {
     let index=value.indexOf('(');
     let str=value.substring(0,index);

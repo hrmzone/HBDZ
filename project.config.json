@@ -48,10 +48,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "pages/item/item",
 					"pathName": "pages/item/item",
-					"query": "sname=工程造价(建筑工程)",
+					"query": "sid=167",
 					"scene": null
 				}
 			]
