@@ -26,7 +26,7 @@
   </block>
   <block wx:else>
   <view>
-    <image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/loading.jpeg" />
+    <image mode="aspectFill" src="cloud://college-lah60.636f-college-lah60-1301291638/404.jpg" />
     </view>
   </block>
 

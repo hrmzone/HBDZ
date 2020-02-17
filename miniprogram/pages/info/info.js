@@ -5,14 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    main_info:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db=wx.cloud.database();
+    db.collection("main_info").get().then(
+      res=>{
+        console.log("onLoad():1:",res.data[0])
+        this.setData({
+          main_info: res.data[0]
+        })
+      }
+    )
   },
 
   /**

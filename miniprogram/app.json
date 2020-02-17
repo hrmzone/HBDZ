@@ -39,14 +39,20 @@
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "images/c2.png",
+        "selectedIconPath": "images/c1.png",
         "text": "院校"
       },
       {
         "pagePath": "pages/subject/subject",
+        "iconPath": "images/z2.png",
+        "selectedIconPath": "images/z1.png",
         "text": "专业"
       },
       {
         "pagePath": "pages/info/info",
+        "iconPath": "images/h2.png",
+        "selectedIconPath": "images/h1.png",
         "text": "About"
       }
     ]

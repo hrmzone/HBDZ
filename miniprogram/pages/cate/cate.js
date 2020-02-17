@@ -40,7 +40,7 @@ Page({
     }).then(
       res=>{
         wx.hideLoading();
-        console.log("onLoad():1:",res.result.list.data);
+        console.log("onLoad():1:",res.result.list.data.length);
         this.setData({
           catelist: res.result.list.data,
           num: res.result.list.data.length

@@ -12,70 +12,70 @@
 <view>
 <van-grid clickable column-num="3">
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d1.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=一类"
     text="第一大类"
     info="建筑"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-2.jpg"
+    icon="images/d2.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=二类"
     text="第二大类"
     info="交运"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-3.jpg"
+    icon="images/d3.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=三类"
     text="第三大类"
     info="机械"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d4.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=四类"
     text="第四大类"
     info="农林"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d5.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=五类"
     text="第五大类"
     info="管理"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d6.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=六类"
     text="第六大类"
     info="教育"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d7.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=七类"
     text="第七大类"
     info="医学"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d8.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=八类"
     text="第八大类"
     info="艺术"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d9.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=九类"
     text="第九大类"
     info="财经"
   />
   <van-grid-item
-    icon="https://img.yzcdn.cn/vant/apple-1.jpg"
+    icon="images/d10.png"
     link-type="navigateTo"
     url="/pages/cate/cate?scate=十类"
     text="第十大类"
@@ -120,7 +120,7 @@
 
 <block wx:else>
 <view>
-<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/loading.jpeg" />
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/error.jpg" />
 </view>
 </block>
 
