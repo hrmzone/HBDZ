@@ -11,7 +11,7 @@ exports.main = async (event, context) => {
       regexp: '.*' + event.scate + '.*',
       options: 'i'
     })
-  }).orderBy('sid', 'desc').get()
+  }).orderBy('sid', 'asc').get()
 
   return {
     list
