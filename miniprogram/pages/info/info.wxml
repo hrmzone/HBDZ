@@ -26,6 +26,6 @@
 </view>
 
 <view>
-<image src="cloud://college-lah60.636f-college-lah60-1301291638/error.jpg" />
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/error.jpg" />
 </view>
 </view>

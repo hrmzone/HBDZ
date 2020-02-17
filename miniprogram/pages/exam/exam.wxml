@@ -1,2 +1,19 @@
-<!--pages/exam/exam.wxml-->
-<text>pages/exam/exam.wxml</text>
+<view>
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/title.jpg" />
+</view>
+<view>
+<van-divider contentPosition="left">2020河北单招考试安排</van-divider>
+</view>
+
+<view wx:for="{{main_info.exam}}" wx:for-index="idx" wx:for-item="item" wx:key="key">
+<van-row custom-class="light">
+  <van-col span="2" offset="1">{{idx+1}}</van-col>
+  <van-col span="20" offset="1">{{item}}</van-col>
+</van-row>
+
+</view>
+<view>
+<van-notice-bar
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
+</view>

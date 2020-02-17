@@ -1,1 +1,22 @@
 /* pages/exam/exam.wxss */
+
+.light {
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1px;
+  background-clip: content-box;
+}
+
+.dark {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  background-color: #e43e3e;
+}
+
+.light {
+  background-color: #66c6f2;
+  text-align: left;
+}
