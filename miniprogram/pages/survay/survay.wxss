@@ -1,1 +1,18 @@
 /* miniprogram/pages/survay/survay.wxss */
+.dark,
+.light {
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-clip: content-box;
+}
+
+.dark {
+  background-color: #39a9ed;
+}
+
+.light {
+  background-color: #66c6f2;
+}

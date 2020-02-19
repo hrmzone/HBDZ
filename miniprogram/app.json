@@ -29,7 +29,8 @@
     "van-button": "/components/dist/button/index",
     "van-tag": "/components/dist/tag/index",
     "van-grid": "/components/dist/grid/index",
-    "van-grid-item": "/components/dist/grid-item/index"
+    "van-grid-item": "/components/dist/grid-item/index",
+    "van-field": "/components/dist/field/index"
   },
   "tabBar": {
     "color": "#ccc",
