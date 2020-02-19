@@ -1,1 +1,24 @@
 /* miniprogram/pages/college/college.wxss */
+.img-content {
+  display: flex;
+  justify-content: center;
+}
+
+.dark,
+.light {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  background-clip: content-box;
+}
+
+.dark {
+  background-color: #39a9ed;
+}
+
+.light {
+  font-size: 12px;
+  background-color: #66c6f2;
+}

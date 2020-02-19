@@ -6,7 +6,7 @@
 
   <block wx:if="{{num > 0}}">
   <view>
-    <van-divider contentPosition="center">河北高职院校清单({{num}}所)</van-divider>
+    <van-divider contentPosition="center">2020河北高职单招院校清单({{num}}所)</van-divider>
   </view>
   <view>
     <van-cell center title="学校招生代码" value="学校名称" />
@@ -26,7 +26,7 @@
   </block>
   <block wx:else>
   <view>
-    <image mode="aspectFill" src="cloud://college-lah60.636f-college-lah60-1301291638/404.jpg" />
+    <image mode="aspectFill" custom="img-content" src="cloud://college-lah60.636f-college-lah60-1301291638/404.jpg" />
     </view>
   </block>
 

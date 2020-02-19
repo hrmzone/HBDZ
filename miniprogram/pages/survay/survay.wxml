@@ -1,5 +1,5 @@
 <!--miniprogram/pages/survay/survay.wxml-->
-<view>
+<view class="img-content">
 <image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/survey.jpg" />
 </view>
 
@@ -61,8 +61,8 @@
 <view>
 <van-divider contentPosition="center"><van-tag round type="primary">您已提交成功</van-tag></van-divider>
 <view>
-<view>
-<image src="cloud://college-lah60.636f-college-lah60-1301291638/qr.jpg" />
+<view class="img-content">
+<image modo="aspectFit" src="cloud://college-lah60.636f-college-lah60-1301291638/qr.jpg" />
 </view>
 </view>
 </view>

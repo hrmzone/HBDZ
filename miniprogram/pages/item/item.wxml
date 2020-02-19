@@ -1,6 +1,6 @@
 <!--miniprogram/pages/item/item.wxml-->
 <view>
-<view align="center">
+<view class="img-content">
 <van-row>
   <van-tag type="primary" size="large">{{subjectinfo.stitle}}</van-tag>  
   </van-row>
@@ -45,7 +45,7 @@
     <van-col span="5" custom-class="dark">大类</van-col>
   </van-row>
 </view>
-<scroll-view scroll-y="true" style="height: 600rpx;">
+<scroll-view scroll-y="true" style="height: 400rpx;">
 <view wx:for="{{subjectitems}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
   <van-row custom-class="light">
     <van-col span="4" >{{item.ccode}}</van-col>

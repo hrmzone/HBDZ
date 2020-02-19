@@ -10,7 +10,7 @@
 </van-row>
 </view>
 
-<view>
+<view class="img-content">
 <image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/main.jpg" />
 </view>
 
@@ -25,7 +25,7 @@
 </van-row>
 </view>
 
-<view>
-<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/error.jpg" />
+<view class="img-content">
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/qr.jpg" />
 </view>
 </view>

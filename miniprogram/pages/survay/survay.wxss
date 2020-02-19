@@ -16,3 +16,8 @@
 .light {
   background-color: #66c6f2;
 }
+
+.img-content {
+  display: flex;
+  justify-content: center;
+}

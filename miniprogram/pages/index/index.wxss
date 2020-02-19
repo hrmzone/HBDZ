@@ -1,1 +1,5 @@
 /* miniprogram/pages/index/index.wxss */
+.img-content {
+  display: flex;
+  justify-content: center;
+}

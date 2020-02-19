@@ -2,11 +2,11 @@
 <view>
 <view>
   <van-row>
-    <van-col span="24"><van-button round disabled size="large" type="info">{{collegeinfo.cname}}</van-button></van-col>
+    <van-col span="24" custom-class="dark">{{collegeinfo.cname}}</van-col>
   </van-row>
   <van-row>
-    <van-col span="11" offset="1"><van-button plain hairline disabled size="small" type="warning">招生代码：{{collegeinfo.ccode}}</van-button></van-col>
-    <van-col span="12"><van-button plain hairline size="small" type="warning">联系方式：{{collegeinfo.tel}}</van-button></van-col>
+    <van-col span="8" custom-class="light">代码：{{collegeinfo.ccode}}</van-col>
+    <van-col span="16" custom-class="light">联系方式：{{collegeinfo.tel}}</van-col>
   </van-row>
 </view>
 
