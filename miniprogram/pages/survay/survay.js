@@ -34,6 +34,54 @@ Page({
   },
 
   formSubmit: function (e) {
+    if (e.detail.value.username == null) {
+      console.log("username is null", this.data.userinfo)
+      wx.showToast({
+        title: '请填写您的姓名',
+        icon: 'none'
+      })
+      return;
+    }
+    if (e.detail.value.phone == null) {
+      console.log("phone is null", this.data.userinfo)
+      wx.showToast({
+        title: '请填写您的电话号码',
+        icon: 'none'
+      })
+      return;
+    }
+    var reg_tel = new RegExp('^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$');
+    if (!reg_tel.test(e.detail.value.phone)) {
+      wx.showToast({
+        title: '请填写正确的手机号码',
+        icon: 'none'
+      })
+      return;
+    }
+    if (e.detail.value.qq == null) {
+      console.log("qq is null", this.data.userinfo)
+      wx.showToast({
+        title: '请填写您的QQ号码',
+        icon: 'none'
+      })
+      return;
+    }
+    if (e.detail.value.school == null) {
+      console.log("school is null", this.data.userinfo)
+      wx.showToast({
+        title: '请填写您的毕业学校',
+        icon: 'none'
+      })
+      return;
+    }
+    if (e.detail.value.subject == null) {
+      console.log("subject is null", this.data.userinfo)
+      wx.showToast({
+        title: '请填写您感兴趣专业',
+        icon: 'none'
+      })
+      return;
+    }
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     this.setData({
       username: e.detail.value.username,
@@ -71,6 +119,16 @@ Page({
     this.setData({
       userinfo: e.detail.userInfo
     })
+    const db=wx.cloud.database();
+    db.collection("wx_user").add({
+      data:{
+        userinfo:e.detail.userinfo
+      }
+    }).then(
+      res=>{
+        console.log("add wx_user")
+      }
+    )
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

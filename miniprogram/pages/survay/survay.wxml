@@ -31,7 +31,7 @@
     <van-field
       name="school"
       label="毕业学校"
-      placeholder="中职毕业学校"
+      placeholder="毕业学校"
       required
     />
     <van-field
@@ -62,7 +62,7 @@
 <van-divider contentPosition="center"><van-tag round type="primary">您已提交成功</van-tag></van-divider>
 <view>
 <view class="img-content">
-<image modo="aspectFit" src="cloud://college-lah60.636f-college-lah60-1301291638/qr.jpg" />
+<image modo="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/qr.jpg" />
 </view>
 </view>
 </view>
