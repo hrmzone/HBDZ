@@ -1,5 +1,5 @@
-<view>
-<image class="img-content" mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/title.jpg" />
+<view class="img-content">
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/title.jpg" />
 </view>
 <view>
 <van-divider contentPosition="left">2020河北单招考试安排</van-divider>
