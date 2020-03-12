@@ -13,7 +13,11 @@ Page({
     college:'',
     msg:'',
     flag:1,
-    ad:''
+    ad:'',
+    thing1:'',
+    time2:'',
+    thing3:'',
+    thing4:''
   },
 
   /**
@@ -28,6 +32,17 @@ Page({
         console.log("onLoad:1:",res.data[0].content)
         this.setData({
           ad:res.data[0].content
+        })
+      }
+    )
+    db.collection("focus").orderBy("id","desc").limit(1).get().then(
+      res=>{
+        console.log("onLoad:2:",res.data[0])
+        this.setData({
+          thing1:res.data[0].thing1,
+          time2:res.data[0].time2,
+          thing3:res.data[0].thing3,
+          thing4:res.data[0].thing4
         })
       }
     )
@@ -129,7 +144,17 @@ Page({
         console.log("add wx_user")
       }
     )
+    wx.requestSubscribeMessage({
+      tmplIds: ['ohIgAH8KVRw76EB05bvER1BOyyZc3cVhV3oIORTm1i0'],
+      success(res) {
+        console.log("requestSubscribeMessage")
+       }
+    });
   },
+
+ 
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
