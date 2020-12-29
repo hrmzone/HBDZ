@@ -6,7 +6,7 @@
 
 <view wx:if="{{flag>0}}">
 <view>
-<van-divider contentPosition="center">2020河北单招专业大类</van-divider>
+<van-divider contentPosition="center">河北单招专业大类</van-divider>
 </view>
 
 <view>
@@ -85,14 +85,14 @@
     icon="todo-list-o"
     link-type="navigateTo"
     url="/pages/exam/exam"
-    text="考试安排"
+    text="录取分数线"
     info="2020"
   />
   <van-grid-item
     icon="edit"
     link-type="navigateTo"
     url="/pages/survay/survay"
-    text="小调查"
+    text="志愿咨询"
   />
 </van-grid>
 </view>
