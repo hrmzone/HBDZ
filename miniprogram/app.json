@@ -7,7 +7,8 @@
     "pages/item/item",
     "pages/info/info",
     "pages/survay/survay",
-    "pages/exam/exam"
+    "pages/exam/exam",
+    "pages/score/score"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -30,7 +31,9 @@
     "van-tag": "/components/dist/tag/index",
     "van-grid": "/components/dist/grid/index",
     "van-grid-item": "/components/dist/grid-item/index",
-    "van-field": "/components/dist/field/index"
+    "van-field": "/components/dist/field/index",
+    "van-tab": "/components/dist/tab/index",
+    "van-tabs": "/components/dist/tabs/index"
   },
   "tabBar": {
     "color": "#ccc",

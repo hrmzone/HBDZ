@@ -1,0 +1,30 @@
+<!--miniprogram/pages/score/score.wxml-->
+<text>miniprogram/pages/score/score.wxml</text>
+<view>
+<view class="img-content">
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/title.jpg" />
+</view>
+<view>
+<van-tabs bind:click="onClick">
+  <van-tab title="单招录取分数线">
+  <van-row custom-class="light">
+    <van-col span="12">学校</van-col>
+    <van-col span="6">有学考</van-col>
+    <van-col span="6">无学考</van-col>
+</van-row>
+<van-row custom-class="light">
+    <van-col span="12">学校</van-col>
+    <van-col span="6">有学考</van-col>
+    <van-col span="6">无学考</van-col>
+</van-row>
+  </van-tab>
+  <van-tab title="普通高考录取分数线">
+  <van-row>
+    <van-col span="12">学校</van-col>
+    <van-col span="6">理科</van-col>
+    <van-col span="6">文科</van-col>
+</van-row>
+  </van-tab>
+</van-tabs>
+</view>
+</view>

@@ -49,6 +49,10 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 7,
 			"list": [
@@ -106,6 +110,12 @@
 					"name": "pages/survay/survay",
 					"pathName": "pages/survay/survay",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/score/score",
+					"pathName": "pages/score/score",
 					"scene": null
 				}
 			]
