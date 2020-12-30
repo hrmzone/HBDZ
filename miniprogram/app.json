@@ -8,7 +8,8 @@
     "pages/info/info",
     "pages/survay/survay",
     "pages/exam/exam",
-    "pages/score/score"
+    "pages/score/score",
+    "pages/lib"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
