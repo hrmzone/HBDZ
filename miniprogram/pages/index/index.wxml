@@ -32,7 +32,6 @@
 
   <view>
   <van-notice-bar
-    mode="closeable"
     speed="20"
     left-icon="/images/noticebar.png" text="{{msg}}" />
   </view>

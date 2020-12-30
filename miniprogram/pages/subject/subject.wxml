@@ -84,7 +84,7 @@
   <van-grid-item
     icon="todo-list-o"
     link-type="navigateTo"
-    url="/pages/exam/exam"
+    url="/pages/score/score"
     text="录取分数线"
     info="2020"
   />
@@ -128,7 +128,6 @@
 
 <view>
 <van-notice-bar
-  mode="closeable"
   speed="20"
   left-icon="/images/noticebar.png" text="{{msg}}" />
 </view>
