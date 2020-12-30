@@ -84,6 +84,13 @@
   <van-grid-item
     icon="todo-list-o"
     link-type="navigateTo"
+    url="/pages/exam/exam"
+    text="考试安排"
+    info="2021"
+  />
+  <van-grid-item
+    icon="images/score.png"
+    link-type="navigateTo"
     url="/pages/score/score"
     text="录取分数线"
     info="2020"
