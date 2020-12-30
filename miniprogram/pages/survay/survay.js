@@ -1,4 +1,5 @@
 // miniprogram/pages/survay/survay.js
+var util = require('../../utils/util.js');
 Page({
 
   /**
@@ -49,6 +50,10 @@ Page({
   },
 
   formSubmit: function (e) {
+    var time = util.formatTime(new Date());
+    this.setData({
+      time: time
+    });
     if (e.detail.value.username == null) {
       console.log("username is null", this.data.userinfo)
       wx.showToast({
@@ -117,7 +122,8 @@ Page({
         school: this.data.school,
         subject: this.data.subject,
         college: this.data.college,
-        msg: this.data.msg
+        msg: this.data.msg,
+        time:this.data.time
       }
     }).then(
       res=>{
