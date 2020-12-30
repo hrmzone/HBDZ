@@ -14,7 +14,34 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.showLoading({
+      title: '加载中...',
+    })
+    wx.cloud.callFunction({
+      name:'getscore'
+    }).then(
+      res=>{
+        wx.hideLoading()
+        console.log("onLoad:1-",res)
+        this.setData({
+          dzscore:res.result.dzscore.data,
+          tkscore:res.result.tkscore.data
+        })
+        console.log(res.result.dzscore.data)
+      }
+    )
+    //获取公告消息msg7
+    const db=wx.cloud.database();
+    db.collection("msg").where({
+      id:7
+    }).get().then(
+      res=>{
+        console.log("onLoad():msg7:", res.data[0].content)
+        this.setData({
+          msg:res.data[0].content
+        })
+      }
+    )
   },
 
   /**

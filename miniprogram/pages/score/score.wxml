@@ -1,8 +1,7 @@
 <!--miniprogram/pages/score/score.wxml-->
-<text>miniprogram/pages/score/score.wxml</text>
 <view>
 <view class="img-content">
-<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/title.jpg" />
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/header.jpg" />
 </view>
 <view>
 <van-tabs bind:click="onClick">
@@ -12,19 +11,42 @@
     <van-col span="6">有学考</van-col>
     <van-col span="6">无学考</van-col>
 </van-row>
+<scroll-view scroll-y="true" style="height: 960rpx;">
+<view wx:for="{{dzscore}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
 <van-row custom-class="light">
-    <van-col span="12">学校</van-col>
-    <van-col span="6">有学考</van-col>
-    <van-col span="6">无学考</van-col>
-</van-row>
+      <van-col span="12">{{item.name}}</van-col>
+      <van-col span="6">{{item.you}}</van-col>
+      <van-col span="6">{{item.wu}}</van-col>
+  </van-row>
+</view>
+</scroll-view>  
   </van-tab>
+
+
   <van-tab title="普通高考录取分数线">
-  <van-row>
+  <van-row custom-class="light">
     <van-col span="12">学校</van-col>
     <van-col span="6">理科</van-col>
     <van-col span="6">文科</van-col>
 </van-row>
-  </van-tab>
-</van-tabs>
+<scroll-view scroll-y="true" style="height: 960rpx;">
+<view wx:for="{{tkscore}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
+<van-row custom-class="light">
+      <van-col span="12">{{item.name}}</van-col>
+      <van-col span="6">{{item.li}}</van-col>
+      <van-col span="6">{{item.wen}}</van-col>
+  </van-row>
 </view>
+</scroll-view> 
+  </van-tab>
+
+
+</van-tabs>
+
+</view>
+<view>
+  <van-notice-bar
+    speed="20"
+    left-icon="/images/noticebar.png" text="{{msg}}" />
+  </view>
 </view>
