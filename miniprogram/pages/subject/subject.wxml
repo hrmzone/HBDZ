@@ -100,7 +100,7 @@
     link-type="navigateTo"
     url="/pages/lib/lib"
     text="真题下载"
-    info="历年"
+    info="免费"
   />
   <van-grid-item
     icon="edit"

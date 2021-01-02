@@ -29,6 +29,16 @@ Page({
         })
       }
     )
+
+    db.collection("msg").where({
+      id:8
+    }).get().then(
+      res=>{
+        this.setData({
+          msg: res.data[0].content
+        })
+      }
+    )
   },
 
   getOpenid:function() {

@@ -2,7 +2,7 @@
 <view>
 
 <view class="img-content">
-<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/main.jpg" />
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/lib.jpg" />
 </view>
 
 <view>
@@ -21,9 +21,16 @@
       <van-col span="8">{{item.cate}}</van-col>
       <van-col span="8">{{item.comment}}</van-col>
       <van-col span="8">
-      <van-button type="primary" bindtap="subscriptionNotice" data-idx="{{item.id}}">发送题目</van-button>
+      <van-button round type="warning" size="small" bindtap="subscriptionNotice" data-idx="{{item.id}}">发送试卷</van-button>
       </van-col>
   </van-row>
+</view>
+
+
+<view>
+<van-notice-bar
+  speed="20"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
 </view>
 
 </view>
