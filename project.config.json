@@ -1,125 +1,131 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
-	},
-	"appid": "wx714512e5aca7bd1e",
-	"projectname": "collegeinfo",
-	"libVersion": "2.8.1",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 7,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "pages/college/college",
-					"pathName": "pages/college/college",
-					"query": "ccode=13400",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "pages/item/item",
-					"pathName": "pages/item/item",
-					"query": "sid=112",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/subject/subject",
-					"pathName": "pages/subject/subject",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 4,
-					"name": "pages/cate/cate",
-					"pathName": "pages/cate/cate",
-					"query": "scate=二类",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/info/info",
-					"pathName": "pages/info/info",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/exam/exam",
-					"pathName": "pages/exam/exam",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/survay/survay",
-					"pathName": "pages/survay/survay",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/score/score",
-					"pathName": "pages/score/score",
-					"scene": null
-				}
-			]
-		}
-	}
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "useMultiFrameRuntime": true,
+    "bundle": false,
+    "useApiHook": true,
+    "useApiHostProcess": true
+  },
+  "appid": "wx714512e5aca7bd1e",
+  "projectname": "collegeinfo",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "pages/college/college",
+          "pathName": "pages/college/college",
+          "query": "ccode=13400",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/item/item",
+          "pathName": "pages/item/item",
+          "query": "sid=112",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/subject/subject",
+          "pathName": "pages/subject/subject",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/cate/cate",
+          "pathName": "pages/cate/cate",
+          "query": "scate=二类",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/info/info",
+          "pathName": "pages/info/info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/exam/exam",
+          "pathName": "pages/exam/exam",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/survay/survay",
+          "pathName": "pages/survay/survay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/score/score",
+          "pathName": "pages/score/score",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lib/lib",
+          "pathName": "pages/lib/lib",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

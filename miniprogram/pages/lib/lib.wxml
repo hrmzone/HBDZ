@@ -1,0 +1,29 @@
+<!--miniprogram/pages/lib.wxml-->
+<view>
+
+<view class="img-content">
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/main.jpg" />
+</view>
+
+<view>
+<van-divider contentPosition="center">历年真题下载</van-divider>
+</view>
+
+<van-row custom-class="light">
+    <van-col span="8">考试类别</van-col>
+    <van-col span="8">大类方向</van-col>
+    <van-col span="8">获取试题</van-col>
+</van-row>
+
+<view wx:for="{{tklist}}" wx:key="idx" wx:for-index="key" wx:for-item="item">
+
+<van-row custom-class="light">
+      <van-col span="8">{{item.cate}}</van-col>
+      <van-col span="8">{{item.comment}}</van-col>
+      <van-col span="8">
+      <van-button type="primary" bindtap="subscriptionNotice" data-idx="{{item.id}}">发送题目</van-button>
+      </van-col>
+  </van-row>
+</view>
+
+</view>
