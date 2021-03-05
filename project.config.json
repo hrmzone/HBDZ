@@ -39,12 +39,6 @@
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -123,6 +117,12 @@
           "id": -1,
           "name": "pages/lib/lib",
           "pathName": "pages/lib/lib",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/convert",
+          "pathName": "pages/convert",
           "scene": null
         }
       ]

@@ -1,4 +1,5 @@
 <!--miniprogram/pages/index/index.wxml-->
+<official-account></official-account>
 <view>
   <view>
     <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:change="onChange" bind:search="onSearch" bind:cancel="onCancel" />

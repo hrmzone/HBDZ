@@ -5,7 +5,7 @@
 </view>
 <view>
 <van-tabs bind:click="onClick">
-  <van-tab title="单招录取分数线">
+  <van-tab title="单招考试录取分数线">
   <van-row custom-class="light">
     <van-col span="12">学校</van-col>
     <van-col span="6">有学考</van-col>
