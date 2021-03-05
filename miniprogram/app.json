@@ -10,7 +10,6 @@
     "pages/exam/exam",
     "pages/score/score",
     "pages/lib/lib",
-    "pages/convert",
     "pages/convert/convert"
   ],
   "window": {

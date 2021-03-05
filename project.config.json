@@ -121,8 +121,8 @@
           "scene": null
         },
         {
-          "name": "pages/convert",
-          "pathName": "pages/convert",
+          "name": "pages/convert/convert",
+          "pathName": "pages/convert/convert",
           "scene": null
         }
       ]

@@ -1,48 +1,37 @@
 import { VantComponent } from '../common/component';
-import { link } from '../mixins/link';
+import { useParent } from '../common/relation';
 import { button } from '../mixins/button';
+import { link } from '../mixins/link';
 import { openType } from '../mixins/open-type';
 VantComponent({
-    mixins: [link, button, openType],
-    relation: {
-        type: 'ancestor',
-        name: 'goods-action',
-        linked(parent) {
-            this.parent = parent;
-        }
+  mixins: [link, button, openType],
+  relation: useParent('goods-action'),
+  props: {
+    text: String,
+    color: String,
+    loading: Boolean,
+    disabled: Boolean,
+    plain: Boolean,
+    type: {
+      type: String,
+      value: 'danger',
     },
-    props: {
-        text: String,
-        color: String,
-        loading: Boolean,
-        disabled: Boolean,
-        plain: Boolean,
-        type: {
-            type: String,
-            value: 'danger'
-        }
+  },
+  methods: {
+    onClick(event) {
+      this.$emit('click', event.detail);
+      this.jumpLink();
     },
-    mounted() {
-        this.updateStyle();
+    updateStyle() {
+      if (this.parent == null) {
+        return;
+      }
+      const { index } = this;
+      const { children = [] } = this.parent;
+      this.setData({
+        isFirst: index === 0,
+        isLast: index === children.length - 1,
+      });
     },
-    methods: {
-        onClick(event) {
-            this.$emit('click', event.detail);
-            this.jumpLink();
-        },
-        updateStyle() {
-            const { children = [] } = this.parent;
-            const { length } = children;
-            const index = children.indexOf(this);
-            let rightBorderLess = false;
-            if (length > 1) {
-                rightBorderLess = index !== length - 1;
-            }
-            this.setData({
-                isFirst: index === 0,
-                rightBorderLess,
-                isLast: index === length - 1
-            });
-        }
-    }
+  },
 });

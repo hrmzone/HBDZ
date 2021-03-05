@@ -1,2 +1,11 @@
 <!--miniprogram/pages/convert/convert.wxml-->
-<text>miniprogram/pages/convert/convert.wxml</text>
+<view>
+
+<view>
+  <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+    <van-radio name="1">单1</van-radio>
+    <van-radio name="2">单2</van-radio>
+  </van-radio-group>
+</view>
+
+</view>
