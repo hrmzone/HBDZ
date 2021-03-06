@@ -21,7 +21,7 @@
 </van-dropdown-menu>
 </van-panel>
 
-<van-panel title="职业技能" desc="专业基础知识-{{course}}" status="总分100">
+<van-panel title="职业技能" desc="专业基础知识科目-{{course}}" status="总分100">
 <van-dropdown-menu>
   <van-dropdown-item value="{{ titleValue3 }}" disabled options="{{ titleName }}" />
   <van-dropdown-item value="{{ gradeValue3 }}" options="{{ className }}" bind:change="onCChange" />

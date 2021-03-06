@@ -11,6 +11,7 @@ Page({
       { text: 'B', value: 1 },
       { text: 'C', value: 2 },
       { text: 'D', value: 3 },
+      { text: 'E', value: 4 },
     ],
     titleName:[
       { text: '语文', value: 1 },
@@ -134,6 +135,8 @@ Page({
       return classCate.C
     } else if(grade==3) {
       return classCate.D
+    } else if(grade==4) {
+      return classCate.E
     } else {
       return 0
     }
