@@ -1,11 +1,45 @@
 <!--miniprogram/pages/convert/convert.wxml-->
 <view>
+<view>
+<text align="center">学考成绩折算计算器</text>
+</view>
+<van-divider hairline />
 
 <view>
-  <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
-    <van-radio name="1">单1</van-radio>
-    <van-radio name="2">单2</van-radio>
-  </van-radio-group>
+
+<van-panel title="文化素质" desc="语文+数学" status="总分300">
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ titleValue1 }}" disabled options="{{ titleName }}" />
+  <van-dropdown-item value="{{ gradeValue1 }}" options="{{ grade }}" bind:change="onYChange" />
+</van-dropdown-menu>
+
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ titleValue2 }}" disabled options="{{ titleName }}" />
+  <van-dropdown-item value="{{ gradeValue2 }}" options="{{ grade }}" bind:change="onYChange" />
+</van-dropdown-menu>
+</van-panel>
+
+<van-panel title="职业技能" desc="专业基础知识-{{course}}" status="总分100">
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ titleValue3 }}" disabled options="{{ titleName }}" />
+  <van-dropdown-item value="{{ gradeValue3 }}" options="{{ className }}" bind:change="onCChange" />
+</van-dropdown-menu>
+
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ titleValue4 }}" disabled options="{{ titleName }}" />
+  <van-dropdown-item value="{{ gradeValue4 }}" options="{{ grade }}" bind:change="onSChange" />
+</van-dropdown-menu>
+</van-panel>
+
+<van-panel title="您的学考折算分数" desc="语文+数学+专业基础知识({{course}})" status="{{score}}分">
+<view>
+  <van-cell-group>
+  <van-cell title="本大类推荐院校" label="{{college}}" value="{{label1}}" border="{{ false }}"/>
+  <van-cell title="本大类推荐专业" label="{{pro}}" value="{{label2}}" />
+</van-cell-group>
+</view>
+</van-panel>
+
 </view>
 
 </view>

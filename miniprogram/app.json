@@ -37,7 +37,10 @@
     "van-tab": "/components/dist/tab/index",
     "van-tabs": "/components/dist/tabs/index",
     "van-radio": "/components/dist/radio/index",
-    "van-radio-group": "/components/dist/radio-group/index"
+    "van-radio-group": "/components/dist/radio-group/index",
+    "van-panel": "/components/dist/panel/index",
+    "van-dropdown-menu": "/components/dist/dropdown-menu/index",
+    "van-dropdown-item": "/components/dist/dropdown-item/index"
   },
   "tabBar": {
     "color": "#ccc",

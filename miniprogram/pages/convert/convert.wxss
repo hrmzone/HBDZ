@@ -1,1 +1,9 @@
 /* miniprogram/pages/convert/convert.wxss */
+.content {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: right;
+}
