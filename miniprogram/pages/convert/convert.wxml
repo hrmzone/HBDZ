@@ -1,9 +1,11 @@
 <!--miniprogram/pages/convert/convert.wxml-->
 <view>
-<view>
-<text align="center">学考成绩折算计算器</text>
+<view class="img-content">
+<image mode="widthFix" src="cloud://college-lah60.636f-college-lah60-1301291638/xk.png" />
 </view>
-<van-divider hairline />
+<view>
+  <van-divider contentPosition="center">学考成绩折算计算器</van-divider>
+</view>
 
 <view>
 
@@ -15,7 +17,7 @@
 
 <van-dropdown-menu>
   <van-dropdown-item value="{{ titleValue2 }}" disabled options="{{ titleName }}" />
-  <van-dropdown-item value="{{ gradeValue2 }}" options="{{ grade }}" bind:change="onYChange" />
+  <van-dropdown-item value="{{ gradeValue2 }}" options="{{ grade }}" bind:change="onSChange" />
 </van-dropdown-menu>
 </van-panel>
 
@@ -27,7 +29,7 @@
 
 <van-dropdown-menu>
   <van-dropdown-item value="{{ titleValue4 }}" disabled options="{{ titleName }}" />
-  <van-dropdown-item value="{{ gradeValue4 }}" options="{{ grade }}" bind:change="onSChange" />
+  <van-dropdown-item value="{{ gradeValue4 }}" options="{{ grade }}" bind:change="onZChange" />
 </van-dropdown-menu>
 </van-panel>
 
@@ -40,6 +42,12 @@
 </view>
 </van-panel>
 
+</view>
+
+<view>
+<van-notice-bar
+  speed="10"
+  left-icon="/images/noticebar.png" text="{{msg}}" />
 </view>
 
 </view>

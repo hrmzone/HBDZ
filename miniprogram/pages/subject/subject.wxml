@@ -108,6 +108,13 @@
     url="/pages/survay/survay"
     text="志愿咨询"
   />
+  <van-grid-item
+    icon="images/d12.png"
+    link-type="navigateTo"
+    url="/pages/convert/convert"
+    text="折算计算器"
+    info="学考"
+  />
 </van-grid>
 </view>
 </view>

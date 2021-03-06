@@ -7,3 +7,8 @@
 .footer {
   text-align: right;
 }
+
+.img-content {
+  display: flex;
+  justify-content: center;
+}
